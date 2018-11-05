@@ -2,16 +2,16 @@ import React from 'react'
 
 const List  = props => (
     props.itens.map((item, index) => 
-        <a className="article" href="#">
+        <div className="article" href="#">
             <div className="article-body">
             <h2 className="article-title">
                 {item.description}
             </h2>
             <footer className="article-info">               
-                <button className="button" onClick={()=>props.onRemove(item)}>Remover</button>
+                <button className="button" onClick={()=> props.onRemove(item)}>Remover</button>
             </footer>
             </div>
-        </a>
+        </div>
     )
 )
 

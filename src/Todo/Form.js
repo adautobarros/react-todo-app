@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = props => (
     <form className="header" onSubmit={props.onSubmit}>
-       <a className="article" href="#">
+       <div className="article" href="#">
             <div className="article-body">
             <h2 className="article-title">
                  Adicionar novo item
@@ -12,7 +12,7 @@ const Form = props => (
              <button className="button">Salvar</button>
             </footer>
             </div>
-        </a>
+        </div>
     </form>
 )
 
